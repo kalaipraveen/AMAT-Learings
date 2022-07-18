@@ -36,6 +36,7 @@ form {
   min-height: 28px;
   float: left;
   margin: 5px;
+  cursor: pointer;
 }
 #signup-btn {
   background-color: #3498db;
@@ -45,10 +46,12 @@ form {
   min-height: 28px;
   float: right;
   margin: 5px;
+  cursor: pointer;
 }
 
 .forgot {
   text-align: center;
+  cursor: pointer;
 }
 .forgot > a {
   color: #f8c534;

@@ -9,7 +9,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.submit-btns {
+  display: flex;
+  justify-content: space-evenly;
+}
 form {
   background-color: white;
   width: 300px;
@@ -18,16 +21,10 @@ form {
   flex-direction: column;
 }
 
-.submit-btns {
-  display: flex;
-  justify-content: space-evenly;
-}
 #email-input {
   padding: 4px;
 }
-#password-input {
-  padding: 4px;
-}
+
 #login-btn {
   background-color: #2ecc71;
   border-radius: 3px;
@@ -36,20 +33,6 @@ form {
   min-height: 28px;
   float: left;
   margin: 5px;
-}
-#signup-btn {
-  background-color: #3498db;
-  border-radius: 3px;
-  border-color: transparent;
-  min-width: 145px;
-  min-height: 28px;
-  float: right;
-  margin: 5px;
+  cursor: pointer;
 }
 
-.forgot {
-  text-align: center;
-}
-.forgot > a {
-  color: #f8c534;
-}
