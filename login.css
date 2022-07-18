@@ -30,18 +30,25 @@ form{
     padding: 4px;
 }
 #login-btn{
-    background-color:#2ecc71;
-    border-radius:10px;
-    border-color: #2ecc71;
-   
+    background-color: #2ecc71;
+    border-radius: 10px;
+    border-color: transparent;
+    min-width: 130px;
+    min-height: 25px;
+    float: left;
+    margin: 5px;
 }
 #signup-btn{
     background-color: #3498db;
-   
-    border-radius:10px;
-    border-color:#3498db;
+    border-radius: 10px;
+    border-color:transparent;
+    min-width: 130px;
+    min-height: 25px;
+    float: right;
+    margin: 5px;
    
 }
+
 .forgot{
     text-align: center;
 }

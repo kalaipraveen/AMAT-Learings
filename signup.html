@@ -10,14 +10,14 @@
 </head>
 <script>
     function onChange() {
-        const password = document.querySelector('input[name=password]');
-        const confirm = document.querySelector('input[name=confirm]');
-        if (confirm.value === password.value) {
-            confirm.setCustomValidity('');
-        } else {
-            confirm.setCustomValidity('Passwords do not match');
-        }
-    }
+  const password = document.querySelector('input[name=password]');
+  const confirm = document.querySelector('input[name=confirm]');
+  if (confirm.value === password.value) {
+    confirm.setCustomValidity('');
+  } else {
+    confirm.setCustomValidity('Passwords do not match');
+  }
+}
 </script>
 
 <body>
@@ -26,11 +26,9 @@
             <h2 style="text-align:center ;">Create Your Account</h2>
             <input type="text" placeholder="Enter your name" id="password-input"><br>
             <input type="email" placeholder="Enter your Email Id.." id="email-input"><br>
-            <input type="password" placeholder="Enter your password.." id="password-input" minlength="6" maxlength="15"
-                size="10" onChange="onChange()"><br>
-            <input type="password" placeholder="Confirm your password.." id="password-input" minlength="6" maxlength="15"
-                size="10" onChange="onChange()"><br>
-            <input type="submit" value="SignUp" id="signup-btn" />
+             <input name="password" type="password" onChange="onChange()" placeholder="New Password" /><br />
+            <input name="confirm"  type="password" onChange="onChange()" placeholder="Confirm Password " /><br />
+            <input type="submit" id="submit-btn" />
         </form>
     </div>
 </body>

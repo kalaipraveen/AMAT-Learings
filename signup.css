@@ -18,38 +18,17 @@ form{
     flex-direction: column;
 }
 
-.submit-btns{
-    display: flex;
-    justify-content: space-evenly;
-    
-}
 #email-input{
     padding: 4px;
 }
 #password-input{
     padding: 4px;
 }
-#login-btn{
-    background-color:#2ecc71;
-    width: 100%;
-    padding: 5px;
-    border-radius:10px;
-    border-color: #2ecc71;
-    float: left;
-    margin:5px;
-}
-#signup-btn{
+#submit-btn{
     background-color: #2ecc71;
     width: 100%;
     border-radius:10px;
     border-color:#2ecc71;
     float: right;
     margin:5px;
-}
-.forgot{
-    text-align: center;
-}
-.forgot > a{
-     color: #f8c534;
-     
 }
