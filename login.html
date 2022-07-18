@@ -7,15 +7,29 @@
 <link rel="stylesheet" href="./login.css">
 <title>Login page</title>
 </head>
+<script>
+  function validateForm() {
+  let x = document.forms["myForm"]["mailid"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  let y = document.forms["myForm"]["password"].value;
+  if (y == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+}
+</script>
 
 <body>
   <div class="main-container">
-    <form>
+    <form name="myForm"  onsubmit="return validateForm()" method="post">
       <h2 style="text-align:center ;">User Login</h2>
-      <input type="email" placeholder="Email" id="email-input" required><br>
-      <input type="password" placeholder="Password" id="password-input" minlength="6" maxlength="15" size="10"><br>
+      <input type="email" placeholder="Email" id="email-input" name="mailid"><br>
+      <input type="password" name="password" placeholder="Password" id="password-input" minlength="6" maxlength="15" size="10"><br>
       <div class="submit-btns">
-        <a href="/" class="login-link"><input type="submit" value="Login" id="login-btn"></a> 
+        <a href="/" class="login-link"><input type="submit" value="Submit" id="login-btn"></a> 
         <a href="./signup.html"><input type="button" value="Signup" id="signup-btn" ></a>
       </div>
       <p class="forgot">Forgot Password?<a href="./forgot.html">Click Here!</a></p>
