@@ -9,26 +9,43 @@
     <title>signUp page</title>
 </head>
 <script>
+    function validateform() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+        let y = document.forms["myForm"]["mailid"].value;
+        if (y ==""){
+            alert("Email must be filled out");
+            return false;
+        }
+        let z = document.forms["myForm"]["pass"].value;
+        if (z ==""){
+            alert("Password must be filled out");
+            return false;
+        }
+    }
     function onChange() {
-  const password = document.querySelector('input[name=password]');
-  const confirm = document.querySelector('input[name=confirm]');
-  if (confirm.value === password.value) {
-    confirm.setCustomValidity('');
-  } else {
-    confirm.setCustomValidity('Passwords do not match');
-  }
-}
+        const password = document.querySelector('input[name=password]');
+        const confirm = document.querySelector('input[name=confirm]');
+        if (confirm.value === password.value) {
+            confirm.setCustomValidity('');
+        } else {
+            confirm.setCustomValidity('Passwords do not match');
+        }
+    }
 </script>
 
 <body>
     <div class="main-container">
-        <form>
+        <form name="myForm" onsubmit="return validateform()" method="post">
             <h2 style="text-align:center ;">Create Your Account</h2>
-            <input type="text" placeholder="Enter your name" id="password-input"><br>
-            <input type="email" placeholder="Enter your Email Id.." id="email-input"><br>
-             <input name="password" type="password" onChange="onChange()" placeholder="New Password" /><br />
-            <input name="confirm"  type="password" onChange="onChange()" placeholder="Confirm Password " /><br />
-            <input type="submit" id="submit-btn" />
+            <input type="text" name="fname" placeholder="Enter your name" id="password-input"><br>
+            <input type="email" name="mailid" placeholder="Enter your Email Id.." id="email-input"><br>
+            <input  name = "pass" type="password" onChange="onChange()" placeholder="New Password" /><br />
+            <input name="confirm" type="password" onChange="onChange()" placeholder="Confirm Password " /><br />
+            <input type="submit" id="submit-btn" value="Submit" />
         </form>
     </div>
 </body>
