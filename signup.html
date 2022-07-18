@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <title>signUp page</title>
+</head>
+<script>
+    function onChange() {
+        const password = document.querySelector('input[name=password]');
+        const confirm = document.querySelector('input[name=confirm]');
+        if (confirm.value === password.value) {
+            confirm.setCustomValidity('');
+        } else {
+            confirm.setCustomValidity('Passwords do not match');
+        }
+    }
+</script>
+
+<body>
+    <div class="main-container">
+        <form>
+            <h2 style="text-align:center ;">Create Your Account</h2>
+            <input type="text" placeholder="Enter your name" id="password-input"><br>
+            <input type="email" placeholder="Enter your Email Id.." id="email-input"><br>
+            <input type="password" placeholder="Enter your password.." id="password-input" minlength="6" maxlength="15"
+                size="10" onChange="onChange()"><br>
+            <input type="password" placeholder="Confirm your password.." id="password-input" minlength="6" maxlength="15"
+                size="10" onChange="onChange()"><br>
+            <input type="submit" value="SignUp" id="signup-btn" />
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+body{
+    background-color: #3498db;
+    margin: 0;
+}
+
+.main-container{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-btns{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#email-input{
+    padding: 4px;
+}
+#password-input{
+    padding: 4px;
+}
+#login-btn{
+    background-color:#2ecc71;
+    border-radius:10px;
+    border-color: #2ecc71;
+   
+}
+#signup-btn{
+    background-color: #3498db;
+   
+    border-radius:10px;
+    border-color:#3498db;
+   
+}
+.forgot{
+    text-align: center;
+}
+.forgot > a{
+     color: #f8c534;
+     
+}
