@@ -10,12 +10,16 @@
 <script>
   function validateForm() {
   let x = document.forms["myForm"]["mailid"].value;
-  if (x == "") {
+  let y = document.forms["myForm"]["password"].value;
+  if (x =="" && y ==""){
+    alert("Enter your login details");
+    return false;
+  }
+  else if (x == "") {
     alert("Email must be filled out");
     return false;
   }
-  let y = document.forms["myForm"]["password"].value;
-  if (y == "") {
+  else {
     alert("Password must be filled out");
     return false;
   }
@@ -32,7 +36,7 @@
         <a href="/" class="login-link"><input type="submit" value="Submit" id="login-btn"></a> 
         <a href="./signup.html"><input type="button" value="Signup" id="signup-btn" ></a>
       </div>
-      <p class="forgot">Forgot Password?<a href="./forgot.html">Click Here!</a></p>
+      <p class="forgot">Forgot Password?<a href="./forgot.html"> Click Here!</a></p>
     </form>
   </div>
 </body>

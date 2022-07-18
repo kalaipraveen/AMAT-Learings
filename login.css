@@ -1,58 +1,55 @@
-body{
-    background-color: #3498db;
-    margin: 0;
+body {
+  background-color: #3498db;
+  margin: 0;
 }
 
-.main-container{
-    min-height: 100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-form{
-    background-color: white;
-    width: 300px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
+form {
+  background-color: white;
+  width: 300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-.submit-btns{
-    display: flex;
-    justify-content: space-evenly;
-    
+.submit-btns {
+  display: flex;
+  justify-content: space-evenly;
 }
-#email-input{
-    padding: 4px;
+#email-input {
+  padding: 4px;
 }
-#password-input{
-    padding: 4px;
+#password-input {
+  padding: 4px;
 }
-#login-btn{
-    background-color: #2ecc71;
-    border-radius: 10px;
-    border-color: transparent;
-    min-width: 130px;
-    min-height: 25px;
-    float: left;
-    margin: 5px;
+#login-btn {
+  background-color: #2ecc71;
+  border-radius: 3px;
+  border-color: transparent;
+  min-width: 145px;
+  min-height: 28px;
+  float: left;
+  margin: 5px;
 }
-#signup-btn{
-    background-color: #3498db;
-    border-radius: 10px;
-    border-color:transparent;
-    min-width: 130px;
-    min-height: 25px;
-    float: right;
-    margin: 5px;
-   
+#signup-btn {
+  background-color: #3498db;
+  border-radius: 3px;
+  border-color: transparent;
+  min-width: 145px;
+  min-height: 28px;
+  float: right;
+  margin: 5px;
 }
 
-.forgot{
-    text-align: center;
+.forgot {
+  text-align: center;
 }
-.forgot > a{
-     color: #f8c534;
-     
+.forgot > a {
+  color: #f8c534;
 }
